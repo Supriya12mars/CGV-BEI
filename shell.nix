@@ -8,20 +8,15 @@ pkgs.mkShell {
     pkgs.python311Packages.venvShellHook
 
     # Python packages that MUST come from Nix (C/C++ libs included)
-    pkgs.python313Packages.ipykernel
-    pkgs.python313Packages.pyzmq
-    pkgs.python313Packages.numpy
+    # pkgs.python313Packages.ipykernel
+    # pkgs.python313Packages.pyzmq
+    # pkgs.python313Packages.numpy
     pkgs.python313Packages.matplotlib
-    pkgs.python313Packages.pillow
-
-    # Graphics / OpenGL-related packages
-    pkgs.python313Packages.pyopengl
-    pkgs.python313Packages.pyglet
-    pkgs.python313Packages.glfw
+    # pkgs.python313Packages.pillow
 
     # Optional (nice to have)
     pkgs.gcc                # for compiling Python wheels
-    pkgs.glibc
+    # pkgs.glibc
     pkgs.git
   ];
 
